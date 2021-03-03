@@ -113,6 +113,7 @@
         <reactive-streams.version>1.0.3</reactive-streams.version>
         <jacoco-maven-plugin.version>0.7.7.201606060606</jacoco-maven-plugin.version>
         <assertj-core.version>3.12.1</assertj-core.version>
+        <java.gio-release>11</java.gio-release>
     </properties>
 
     <dependencyManagement>
@@ -476,6 +477,7 @@
                         <version>2.8</version>
                         <configuration>
                             <additionalparam>-Xdoclint:none</additionalparam>
+                            <source>${java.gio-release}</source>
                         </configuration>
                         <executions>
                             <execution>
