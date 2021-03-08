@@ -113,7 +113,6 @@
         <reactive-streams.version>1.0.3</reactive-streams.version>
         <jacoco-maven-plugin.version>0.7.7.201606060606</jacoco-maven-plugin.version>
         <assertj-core.version>3.12.1</assertj-core.version>
-        <hazelcast.version>4.1.1</hazelcast.version>
     </properties>
 
     <dependencyManagement>
