@@ -21,7 +21,7 @@
 
     <groupId>io.gravitee</groupId>
     <artifactId>gravitee-parent</artifactId>
-    <version>15</version>
+    <version>15.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Gravitee.io APIM - Parent POM</name>
@@ -69,33 +69,6 @@
         <name>Gravitee.IO</name>
         <url>https://gravitee.io</url>
     </organization>
-
-    <developers>
-        <developer>
-            <email>azize@graviteesource.com</email>
-            <name>Azize ELAMRANI</name>
-            <url>https://github.com/aelamrani</url>
-            <id>aelamrani</id>
-        </developer>
-        <developer>
-            <email>david@graviteesource.com</email>
-            <name>David BRASSELY</name>
-            <url>https://github.com/brasseld</url>
-            <id>brasseld</id>
-        </developer>
-        <developer>
-            <email>nicolas@graviteesource.com</email>
-            <name>Nicolas GERAUD</name>
-            <url>https://github.com/NicolasGeraud</url>
-            <id>NicolasGeraud</id>
-        </developer>
-        <developer>
-            <email>titouan@graviteesource.com</email>
-            <name>Titouan COMPIEGNE</name>
-            <url>https://github.com/tcompiegne</url>
-            <id>tcompiegne</id>
-        </developer>
-    </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -315,6 +288,89 @@
                                 <goals>
                                     <goal>sign</goal>
                                 </goals>
+                                <configuration>
+                                    <gpgArguments>
+                                        <arg>--pinentry-mode</arg>
+                                        <arg>loopback</arg>
+                                    </gpgArguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>2.4</version>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>2.8</version>
+                        <configuration>
+                            <additionalparam>-Xdoclint:none</additionalparam>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>gio-release</id>
+            <activation>
+                <property>
+                    <name>performRelease</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-enforcer-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>enforce-no-snapshots</id>
+                                <goals>
+                                    <goal>enforce</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <!-- No nexus staging : instead, configured private artifactory in settings.xml -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.6</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                                <configuration>
+                                    <gpgArguments>
+                                        <arg>--pinentry-mode</arg>
+                                        <arg>loopback</arg>
+                                    </gpgArguments>
+                                </configuration>
                             </execution>
                         </executions>
                     </plugin>
