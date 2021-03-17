@@ -113,6 +113,7 @@
         <reactive-streams.version>1.0.3</reactive-streams.version>
         <jacoco-maven-plugin.version>0.7.7.201606060606</jacoco-maven-plugin.version>
         <assertj-core.version>3.12.1</assertj-core.version>
+        <logback-json.version>0.1.5</logback-json.version>
     </properties>
 
     <dependencyManagement>
@@ -182,6 +183,24 @@
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-core</artifactId>
                 <version>${logback.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback.contrib</groupId>
+                <artifactId>logback-jackson</artifactId>
+                <version>${logback-json.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback.contrib</groupId>
+                <artifactId>logback-json-classic</artifactId>
+                <version>${logback-json.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback.contrib</groupId>
+                <artifactId>logback-json-core</artifactId>
+                <version>${logback-json.version}</version>
                 <scope>provided</scope>
             </dependency>
 
