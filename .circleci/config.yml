@@ -3,12 +3,16 @@ version: 2.1
 parameters:
   gio_action:
     type: enum
-    enum: [release, pull_requests]
+    enum: [release, replay_release, pull_requests]
     default: pull_requests
   dry_run:
     type: boolean
     default: true
     description: "Run in dry run mode?"
+  replayed_release:
+    type: string
+    default: $GIO_RELEASE_VERSION
+    description: "What release version do you want to replay?"
   maven_profile_id:
     type: string
     default: "gravitee-dry-run"
@@ -94,3 +98,35 @@ workflows:
           dry_run: << pipeline.parameters.dry_run >>
           maven_profile_id: 'gravitee-dry-run'
           next_snapshot_version: << pipeline.parameters.next_snapshot_version >>
+
+  replay_release:
+    when:
+      and:
+        - equal: [ replay_release, << pipeline.parameters.gio_action >> ]
+        - not : << pipeline.parameters.dry_run >>
+    jobs:
+      - gravitee/d_gio_parent_release_secrets:
+          context: cicd-orchestrator
+          name: 'gio_parent_release_secrets'
+      - gravitee/d_gio_parent_release_replay:
+          requires:
+            - gio_parent_release_secrets
+          dry_run: << pipeline.parameters.dry_run >>
+          maven_profile_id: 'gio-release'
+          gio_release_version: << pipeline.parameters.replayed_release >>
+
+  replay_release_dry_run:
+    when:
+      and:
+        - equal: [ replay_release, << pipeline.parameters.gio_action >> ]
+        - << pipeline.parameters.dry_run >>
+    jobs:
+      - gravitee/d_gio_parent_release_secrets:
+          context: cicd-orchestrator
+          name: 'gio_parent_release_secrets'
+      - gravitee/d_gio_parent_release_replay:
+          requires:
+            - gio_parent_release_secrets
+          dry_run: << pipeline.parameters.dry_run >>
+          maven_profile_id: 'gravitee-dry-run'
+          gio_release_version: << pipeline.parameters.replayed_release >>
