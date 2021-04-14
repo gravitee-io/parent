@@ -12,7 +12,11 @@ parameters:
   replayed_release:
     type: string
     default: $GIO_RELEASE_VERSION
-    description: "What release version do you want to replay?"
+    description: "(Used only with replay_release workflow) What release version do you want to replay?"
+  replay_nexus:
+    type: boolean
+    default: false
+    description: "(Used only with replay_release workflow) Replay the Nexus Maven Central Release?"
   maven_profile_id:
     type: string
     default: "gravitee-dry-run"
@@ -114,6 +118,7 @@ workflows:
           dry_run: << pipeline.parameters.dry_run >>
           maven_profile_id: 'gio-release'
           gio_release_version: << pipeline.parameters.replayed_release >>
+          replay_nexus: << pipeline.parameters.replay_nexus >>
 
   replay_release_dry_run:
     when:
@@ -130,3 +135,4 @@ workflows:
           dry_run: << pipeline.parameters.dry_run >>
           maven_profile_id: 'gravitee-dry-run'
           gio_release_version: << pipeline.parameters.replayed_release >>
+          replay_nexus: << pipeline.parameters.replay_nexus >>
