@@ -99,21 +99,21 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <assertj-core.version>3.12.1</assertj-core.version>
+        <jackson.version>2.10.3</jackson.version>
+        <jacoco-maven-plugin.version>0.7.7.201606060606</jacoco-maven-plugin.version>
+        <jersey.version>2.30.1</jersey.version>
+        <jetty.version>9.4.36.v20210114</jetty.version>
+        <junit.version>4.12</junit.version>
+        <logback.version>1.2.3</logback.version>
+        <logback-json.version>0.1.5</logback-json.version>
+        <mockito.version>3.6.0</mockito.version>
+        <netty.version>4.1.60.Final</netty.version>
+        <reactive-streams.version>1.0.3</reactive-streams.version>
+        <rxjava.version>2.2.19</rxjava.version>
         <slf4j.version>1.7.26</slf4j.version>
         <spring.version>5.2.14.RELEASE</spring.version>
-        <junit.version>4.12</junit.version>
         <vertx.version>3.9.7</vertx.version>
-        <netty.version>4.1.60.Final</netty.version>
-        <jetty.version>9.4.36.v20210114</jetty.version>
-        <jersey.version>2.30.1</jersey.version>
-        <logback.version>1.2.3</logback.version>
-        <mockito.version>3.6.0</mockito.version>
-        <jackson.version>2.10.3</jackson.version>
-        <rxjava.version>2.2.19</rxjava.version>
-        <reactive-streams.version>1.0.3</reactive-streams.version>
-        <jacoco-maven-plugin.version>0.7.7.201606060606</jacoco-maven-plugin.version>
-        <assertj-core.version>3.12.1</assertj-core.version>
-        <logback-json.version>0.1.5</logback-json.version>
     </properties>
 
     <dependencyManagement>
