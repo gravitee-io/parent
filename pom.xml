@@ -112,7 +112,7 @@
         <reactive-streams.version>1.0.3</reactive-streams.version>
         <rxjava.version>2.2.19</rxjava.version>
         <slf4j.version>1.7.26</slf4j.version>
-        <spring.version>5.2.14.RELEASE</spring.version>
+        <spring.version>5.3.7</spring.version>
         <vertx.version>3.9.7</vertx.version>
     </properties>
 
