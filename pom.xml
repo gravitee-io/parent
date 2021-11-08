@@ -98,6 +98,9 @@
     </developers>
 
     <properties>
+        <!-- To make reproducible builds. See https://maven.apache.org/guides/mini/guide-reproducible-builds.html-->
+        <project.build.outputTimestamp>1</project.build.outputTimestamp>
+        <!-- -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j.version>1.7.26</slf4j.version>
         <spring.version>5.2.14.RELEASE</spring.version>
@@ -240,6 +243,26 @@
     <build>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.3.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>3.3.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.2.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>3.2.1</version>
+                </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>versions-maven-plugin</artifactId>
@@ -401,7 +424,6 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
-                        <version>2.4</version>
                         <executions>
                             <execution>
                                 <id>attach-sources</id>
@@ -415,9 +437,8 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>2.8</version>
                         <configuration>
-                            <additionalparam>-Xdoclint:none</additionalparam>
+                            <additionalJOption>-Xdoclint:none</additionalJOption>
                         </configuration>
                         <executions>
                             <execution>
@@ -478,7 +499,6 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
-                        <version>2.4</version>
                         <executions>
                             <execution>
                                 <id>attach-sources</id>
@@ -492,9 +512,8 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>2.8</version>
                         <configuration>
-                            <additionalparam>-Xdoclint:none</additionalparam>
+                            <additionalJOption>-Xdoclint:none</additionalJOption>
                         </configuration>
                         <executions>
                             <execution>
@@ -525,7 +544,6 @@
                                 <configuration>
                                     <propertyName>surefireArgLine</propertyName>
                                     <destFile>${project.basedir}/target/jacoco.exec</destFile>
-                                    <dataFile>${project.basedir}/target/jacoco.exec</dataFile>
                                 </configuration>
                             </execution>
                             <execution>
