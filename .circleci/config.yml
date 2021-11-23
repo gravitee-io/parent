@@ -27,7 +27,7 @@ parameters:
     description: "SecretHub Repo to use to fetch secrets ?"
 
 orbs:
-  gravitee: gravitee-io/gravitee@dev:1.0.4
+  gravitee: gravitee-io/gravitee@1.0
   secrethub: secrethub/cli@1.1.0
 
 # --- Jobs to perform all workflows
