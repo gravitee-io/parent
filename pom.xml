@@ -115,11 +115,16 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>1.4.1</version>
+                    <version>3.1.0</version>
                     <configuration>
                         <rules>
                             <requireReleaseDeps>
                                 <message>No Snapshots Allowed!</message>
+                                <excludes>
+                                    <!-- Workaround to break cyclic dependencies in APIM between plugins and core APIM -->
+                                    <exclude>io.gravitee.apim.*:*:*:*:test</exclude>
+                                    <exclude>io.gravitee.apim.*:*:*:*:provided</exclude>
+                                </excludes>
                             </requireReleaseDeps>
                             <requireReleaseVersion>
                                 <message>No Snapshots Allowed!</message>
