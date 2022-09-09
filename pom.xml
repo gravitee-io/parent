@@ -122,7 +122,7 @@
                                 <message>No Snapshots Allowed!</message>
                                 <excludes>
                                     <!-- Workaround to break cyclic dependencies in APIM between plugins and core APIM -->
-                                    <exclude>io.gravitee.apim.*:*:*:*:test</exclude>
+                                    <exclude>io.gravitee.*:*:*:*:test</exclude>
                                     <exclude>io.gravitee.apim.*:*:*:*:provided</exclude>
                                 </excludes>
                             </requireReleaseDeps>
