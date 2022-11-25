@@ -21,7 +21,7 @@
 
     <groupId>io.gravitee</groupId>
     <artifactId>gravitee-parent</artifactId>
-    <version>20.6-SNAPSHOT</version>
+    <version>20.5.0</version>
     <packaging>pom</packaging>
 
     <name>Gravitee.io APIM - Parent POM</name>
@@ -48,11 +48,6 @@
         <connection>scm:git:git://github.com/gravitee-io/parent.git</connection>
         <developerConnection>scm:git:git@github.com:gravitee-io/parent.git</developerConnection>
     </scm>
-
-    <ciManagement>
-        <system>Jenkins</system>
-        <url>https://ci.gravitee.io</url>
-    </ciManagement>
 
     <distributionManagement>
         <snapshotRepository>
