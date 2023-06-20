@@ -1,3 +1,10 @@
+## [21.0.1](https://github.com/gravitee-io/gravitee-parent/compare/21.0.0...21.0.1) (2023-06-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.sonatype.plugins:nexus-staging-maven-plugin to v1.6.13 ([68eb0c7](https://github.com/gravitee-io/gravitee-parent/commit/68eb0c7389c27aef13c3266c527e4f5695effbed))
+
 # [21.0.0](https://github.com/gravitee-io/gravitee-parent/compare/20.5.0...21.0.0) (2022-11-28)
 
 
