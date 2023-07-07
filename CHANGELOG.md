@@ -1,3 +1,19 @@
+# [22.0.0](https://github.com/gravitee-io/gravitee-parent/compare/21.0.1...22.0.0) (2023-07-07)
+
+
+### Features
+
+* add prettier plugin by default ([8834ff6](https://github.com/gravitee-io/gravitee-parent/commit/8834ff6943d33b23e5d280e5625e8d27637212a5))
+* bump maven plugin versions ([2cddc86](https://github.com/gravitee-io/gravitee-parent/commit/2cddc863461a9125ccbc7212350b439b1307d4d7))
+* change maven compiler configuration ([3b6c280](https://github.com/gravitee-io/gravitee-parent/commit/3b6c280f2089a1a70f647ad7c2b9298c1087fde4))
+* remove unused profile ([6796c63](https://github.com/gravitee-io/gravitee-parent/commit/6796c63c99fa731fa3108ecc246f64ad94c4932c))
+
+
+### BREAKING CHANGES
+
+* now use JDK 17 as source and target compilation
+* Remove gravitee-report profile
+
 ## [21.0.1](https://github.com/gravitee-io/gravitee-parent/compare/21.0.0...21.0.1) (2023-06-20)
 
 
