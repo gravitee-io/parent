@@ -1,11 +1,18 @@
 {
-  "extends": ["config:base", "schedule:earlyMondays"],
-  "prConcurrentLimit": 3,
+  "extends": ["config:base"],
   "rebaseWhen": "conflicted",
   "packageRules": [
     {
       "matchDatasources": ["orb"],
-      "rangeStrategy": "replace"
+      "automerge": true,
+      "automergeType": "branch",
+      "semanticCommitType": "ci"
+    },
+    {
+      "matchDepTypes": ["build"],
+      "automerge": true,
+      "automergeType": "branch",
+      "semanticCommitType": "fix"
     }
   ]
 }
