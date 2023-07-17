@@ -1,3 +1,10 @@
+## [22.0.2](https://github.com/gravitee-io/gravitee-parent/compare/22.0.1...22.0.2) (2023-07-17)
+
+
+### Bug Fixes
+
+* use nexus-plugin only in `gravitee-release` profile ([cb8132b](https://github.com/gravitee-io/gravitee-parent/commit/cb8132bc0b349a0670c0217c55b5c4a8f2026b13))
+
 ## [22.0.1](https://github.com/gravitee-io/gravitee-parent/compare/22.0.0...22.0.1) (2023-07-12)
 
 
