@@ -1,3 +1,10 @@
+## [22.0.3](https://github.com/gravitee-io/gravitee-parent/compare/22.0.2...22.0.3) (2023-08-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.apache.maven.plugins:maven-enforcer-plugin to v3.4.0 ([78933ed](https://github.com/gravitee-io/gravitee-parent/commit/78933ed98117adaaacdfa79ba318e8315ef3a093))
+
 ## [22.0.2](https://github.com/gravitee-io/gravitee-parent/compare/22.0.1...22.0.2) (2023-07-17)
 
 
