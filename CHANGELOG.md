@@ -1,3 +1,10 @@
+## [22.0.4](https://github.com/gravitee-io/gravitee-parent/compare/22.0.3...22.0.4) (2023-08-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.hubspot.maven.plugins:prettier-maven-plugin to v0.21 ([282eaa3](https://github.com/gravitee-io/gravitee-parent/commit/282eaa3c8857f51cf58d14cf9c04e53699ecb0d0))
+
 ## [22.0.3](https://github.com/gravitee-io/gravitee-parent/compare/22.0.2...22.0.3) (2023-08-22)
 
 
