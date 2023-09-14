@@ -1,3 +1,10 @@
+## [22.0.6](https://github.com/gravitee-io/gravitee-parent/compare/22.0.5...22.0.6) (2023-09-14)
+
+
+### Bug Fixes
+
+* allow to skip prettier and license plugins ([05231e3](https://github.com/gravitee-io/gravitee-parent/commit/05231e3d1bb321dce95034415ce8a7587aff095e))
+
 ## [22.0.5](https://github.com/gravitee-io/gravitee-parent/compare/22.0.4...22.0.5) (2023-09-11)
 
 
