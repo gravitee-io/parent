@@ -1,3 +1,10 @@
+## [22.0.11](https://github.com/gravitee-io/gravitee-parent/compare/22.0.10...22.0.11) (2023-11-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.apache.maven.plugins:maven-javadoc-plugin to v3.6.2 ([aab576d](https://github.com/gravitee-io/gravitee-parent/commit/aab576d0ac28770abf91685a4c7bf9fd622d14c6))
+
 ## [22.0.10](https://github.com/gravitee-io/gravitee-parent/compare/22.0.9...22.0.10) (2023-10-23)
 
 
