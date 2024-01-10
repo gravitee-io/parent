@@ -1,3 +1,10 @@
+## [22.0.18](https://github.com/gravitee-io/gravitee-parent/compare/22.0.17...22.0.18) (2024-01-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.2.5 ([65cfa97](https://github.com/gravitee-io/gravitee-parent/commit/65cfa9757a339a8f658549e55f0d9eaf401ef4a1))
+
 ## [22.0.17](https://github.com/gravitee-io/gravitee-parent/compare/22.0.16...22.0.17) (2023-12-24)
 
 
