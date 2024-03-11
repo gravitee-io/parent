@@ -1,3 +1,10 @@
+## [22.0.20](https://github.com/gravitee-io/gravitee-parent/compare/22.0.19...22.0.20) (2024-03-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.apache.maven.plugins:maven-gpg-plugin to v3.2.0 ([759ffb5](https://github.com/gravitee-io/gravitee-parent/commit/759ffb5f5fa47060af64d2a616e128d5c07ab34e))
+
 ## [22.0.19](https://github.com/gravitee-io/gravitee-parent/compare/22.0.18...22.0.19) (2024-01-18)
 
 
