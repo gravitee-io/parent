@@ -1,3 +1,10 @@
+## [22.0.22](https://github.com/gravitee-io/gravitee-parent/compare/22.0.21...22.0.22) (2024-03-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.apache.maven.plugins:maven-compiler-plugin to v3.13.0 ([e6d163b](https://github.com/gravitee-io/gravitee-parent/commit/e6d163bb45a0e460308aa6a09642d9a8deb97e87))
+
 ## [22.0.21](https://github.com/gravitee-io/gravitee-parent/compare/22.0.20...22.0.21) (2024-03-18)
 
 
