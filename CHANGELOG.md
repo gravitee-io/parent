@@ -1,3 +1,10 @@
+## [22.0.24](https://github.com/gravitee-io/gravitee-parent/compare/22.0.23...22.0.24) (2024-04-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.apache.maven.plugins:maven-source-plugin to v3.3.1 ([4161506](https://github.com/gravitee-io/gravitee-parent/commit/4161506c81c9fde1a3eb61cda20d1e17dfca3168))
+
 ## [22.0.23](https://github.com/gravitee-io/gravitee-parent/compare/22.0.22...22.0.23) (2024-03-26)
 
 
