@@ -106,7 +106,7 @@
         <license-maven-plugin.version>4.5</license-maven-plugin.version>
         <prettier-maven-plugin.version>0.22</prettier-maven-plugin.version>
         <prettier-maven-plugin.prettierJavaVersion>2.1.0</prettier-maven-plugin.prettierJavaVersion>
-        <nexus-staging-maven-plugin.version>1.6.14</nexus-staging-maven-plugin.version>
+        <nexus-staging-maven-plugin.version>1.7.0</nexus-staging-maven-plugin.version>
         <skip.validation>false</skip.validation>
         <versions-maven-plugin.version>2.16.2</versions-maven-plugin.version>
     </properties>
