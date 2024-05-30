@@ -1,3 +1,10 @@
+## [22.0.30](https://github.com/gravitee-io/gravitee-parent/compare/22.0.29...22.0.30) (2024-05-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.apache.maven.plugins:maven-enforcer-plugin to v3.5.0 ([439096f](https://github.com/gravitee-io/gravitee-parent/commit/439096f3e23f2679909d79675b3e9c136ee32086))
+
 ## [22.0.29](https://github.com/gravitee-io/gravitee-parent/compare/22.0.28...22.0.29) (2024-05-28)
 
 
