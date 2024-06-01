@@ -1,3 +1,10 @@
+## [22.0.31](https://github.com/gravitee-io/gravitee-parent/compare/22.0.30...22.0.31) (2024-06-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.apache.maven.plugins:maven-javadoc-plugin to v3.7.0 ([671947b](https://github.com/gravitee-io/gravitee-parent/commit/671947be2b04d464115fc695e2fdfcbede9d1903))
+
 ## [22.0.30](https://github.com/gravitee-io/gravitee-parent/compare/22.0.29...22.0.30) (2024-05-30)
 
 
