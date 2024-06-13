@@ -1,3 +1,10 @@
+# [22.1.0](https://github.com/gravitee-io/gravitee-parent/compare/22.0.31...22.1.0) (2024-06-13)
+
+
+### Features
+
+* add `kr.motd.maven` into build extention ([54b29b7](https://github.com/gravitee-io/gravitee-parent/commit/54b29b7396c7b7586ea9a176b61df62d36e42c9e))
+
 ## [22.0.31](https://github.com/gravitee-io/gravitee-parent/compare/22.0.30...22.0.31) (2024-06-01)
 
 
