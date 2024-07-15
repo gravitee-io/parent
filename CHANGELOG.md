@@ -1,3 +1,10 @@
+## [22.1.4](https://github.com/gravitee-io/gravitee-parent/compare/22.1.3...22.1.4) (2024-07-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.codehaus.mojo:versions-maven-plugin to v2.17.1 ([c5cd5be](https://github.com/gravitee-io/gravitee-parent/commit/c5cd5be257757ec197647cbae3ea0305ac3b6303))
+
 ## [22.1.3](https://github.com/gravitee-io/gravitee-parent/compare/22.1.2...22.1.3) (2024-07-11)
 
 
