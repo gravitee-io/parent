@@ -1,3 +1,10 @@
+## [22.1.11](https://github.com/gravitee-io/gravitee-parent/compare/22.1.10...22.1.11) (2024-09-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency com.mycila:license-maven-plugin to v4.6 ([059a1b4](https://github.com/gravitee-io/gravitee-parent/commit/059a1b411fea828e9ea3ff174913ff9decd15dc7))
+
 ## [22.1.10](https://github.com/gravitee-io/gravitee-parent/compare/22.1.9...22.1.10) (2024-09-14)
 
 
