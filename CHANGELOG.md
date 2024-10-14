@@ -1,3 +1,10 @@
+## [22.2.1](https://github.com/gravitee-io/gravitee-parent/compare/22.2.0...22.2.1) (2024-10-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.apache.maven.plugins:maven-assembly-plugin to v3.7.1 ([06c1790](https://github.com/gravitee-io/gravitee-parent/commit/06c1790e565f840ddcd505e62acb32b24cc13c3c))
+
 # [22.2.0](https://github.com/gravitee-io/gravitee-parent/compare/22.1.14...22.2.0) (2024-10-14)
 
 
