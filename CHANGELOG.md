@@ -1,3 +1,10 @@
+# [22.2.0](https://github.com/gravitee-io/gravitee-parent/compare/22.1.14...22.2.0) (2024-10-14)
+
+
+### Features
+
+* define maven assembly plugin ([8e48563](https://github.com/gravitee-io/gravitee-parent/commit/8e485633c3605f7687c9dfd349cdcaea85db609c))
+
 ## [22.1.14](https://github.com/gravitee-io/gravitee-parent/compare/22.1.13...22.1.14) (2024-10-06)
 
 
