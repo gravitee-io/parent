@@ -1,3 +1,11 @@
+## [22.2.2](https://github.com/gravitee-io/gravitee-parent/compare/22.2.1...22.2.2) (2024-11-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.apache.maven.plugins:maven-javadoc-plugin to v3.11.1 ([2173723](https://github.com/gravitee-io/gravitee-parent/commit/217372384a99f9ec13a299a41c4d4dd2ce4a160c))
+* **deps:** update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.5.2 ([58074e5](https://github.com/gravitee-io/gravitee-parent/commit/58074e572e7a01b4325517416e7244730941143a))
+
 ## [22.2.1](https://github.com/gravitee-io/gravitee-parent/compare/22.2.0...22.2.1) (2024-10-14)
 
 
