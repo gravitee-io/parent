@@ -22,7 +22,7 @@
 
     <groupId>io.gravitee</groupId>
     <artifactId>gravitee-parent</artifactId>
-    <version>22.2.4</version>
+    <version>23.0.0-archi-425-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Gravitee.io APIM - Parent POM</name>
@@ -96,6 +96,7 @@
     <properties>
         <surefireArgLine></surefireArgLine>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>21</java.version>
         <maven-assembly-plugin.version>3.7.1</maven-assembly-plugin.version>
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
         <maven-enforcer-plugin.version>3.5.0</maven-enforcer-plugin.version>
@@ -167,8 +168,8 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>${maven-compiler-plugin.version}</version>
                     <configuration>
-                        <source>17</source>
-                        <target>17</target>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
                     </configuration>
                 </plugin>
                 <plugin>
